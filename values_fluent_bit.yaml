@@ -1,0 +1,17 @@
+env:
+- name: Host
+  value: ""
+config:
+  outputs: |
+    [OUTPUT]
+        Name            es
+        Match           kube.*
+        Host            ${Host}
+        Port            443
+        Index           eks-index
+        HTTP_User       ekslogging
+        HTTP_Passwd     Ekslogging@123
+        Retry_Limit     False
+        tls             On
+        tls.verify      Off
+        Suppress_Type_Name On
