@@ -32,10 +32,7 @@ variable "sns_email" {
 
 # -------------------------------------------------------------------------
 
-# variable "AWS_ACCOUNT_ID" {
-#   type = string
-#   default = "841308375272"
-# }
+
 
 variable "PROM_SERVICE_ACCOUNT_NAMESPACE" {
   type = string
