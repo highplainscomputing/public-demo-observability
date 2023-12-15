@@ -59,10 +59,7 @@ resource "aws_iam_role_policy_attachment" "grafana-attach" {
 # resource "aws_grafana_role_association" "abdullah" {
 #   
 
-#   role         = "ADMIN"
-#   group_ids    = ["c458a418-9041-7061-8423-6505d5885c0f"]
-#   user_ids     = ["34688478-b021-70d6-bb3c-911eb640416b"]
-#   workspace_id = aws_grafana_workspace.abdullah.id
+
 # }
 
 resource "grafana_data_source" "prometheus" {
